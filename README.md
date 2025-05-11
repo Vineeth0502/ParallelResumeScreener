@@ -148,11 +148,6 @@ Speedup: 3.42x
 <img width="1494" alt="Screenshot 2025-05-11 at 12 20 19 AM" src="https://github.com/user-attachments/assets/5e206cc2-0526-48a6-bfc9-c0dbc5ff1c69" />
 
 
----
-
-## 👨‍💻 Contributors
-- Vineeth Ketham (Fullstack + Resume Logic)
-- GPT-4o (Code Assistance & Optimization)
 
 ---
 
