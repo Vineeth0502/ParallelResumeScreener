@@ -65,62 +65,73 @@ def extract_years_experience(text):
     Returns:
         int: Years of experience (default 0 if not found)
     """
-    # More comprehensive patterns to match different formats of experience
-    patterns = [
-        # Standard formats
-        r'(\d+)\+?\s*(?:years?|yrs?)(?:\s*of\s*)?(?:experience|exp)',
-        r'(?:experience|exp)(?:\s*of\s*)?(\d+)\+?\s*(?:years?|yrs?)',
-        r'(?:work(?:ed|ing)?|profession(?:al)?)\s*(?:for|with)?\s*(\d+)\+?\s*(?:years?|yrs?)',
+    if not text:
+        return 0
         
-        # Date ranges (e.g., "2018 - Present" or "2015-2020")
-        r'(\d{4})\s*(?:-|–|to)\s*(?:present|current|now)',
-        r'(\d{4})\s*(?:-|–|to)\s*(\d{4})',
-        
-        # Experience mentioned in job titles
-        r'(\d+)\+?\s*(?:years?|yrs?)\s*(?:as|in)\s*\w+',
-        
-        # Specific job durations
-        r'(?:position|role|job)(?:\s*for\s*)?(\d+)\+?\s*(?:years?|yrs?)',
-        
-        # Simple year mentions near experience words
-        r'(?:experience|exp|work).{1,30}?(\d+)\+?\s*(?:years?|yrs?)',
-        r'(\d+)\+?\s*(?:years?|yrs?).{1,30}?(?:experience|exp|work)'
+    # Patterns specifically looking for years of experience phrases
+    experience_patterns = [
+        # Most common formats - only match these when specifically talking about "experience"
+        r'(\d+)\+?\s*(?:years?|yrs?)\s+(?:of\s+)?(?:experience|work\s+experience)',
+        r'(?:with|having)\s+(\d+)\+?\s*(?:years?|yrs?)\s+(?:of\s+)?(?:experience)',
+        r'(?:experience|work\s+experience)(?:\s+of)?\s+(\d+)\+?\s*(?:years?|yrs?)',
     ]
     
-    # Parse current year for date range calculations
-    import datetime
-    current_year = datetime.datetime.now().year
-    
-    max_years = 0
-    for pattern in patterns:
+    # First check for explicit experience mentions
+    for pattern in experience_patterns:
         matches = re.findall(pattern, text.lower())
         if matches:
-            for match in matches:
-                try:
-                    # Handle tuple results from regex groups
-                    if isinstance(match, tuple):
-                        # Check if it's a year range pattern
-                        if len(match) == 2 and len(match[0]) == 4 and (len(match[1]) == 4 or match[1] == ''):
-                            # Calculate years between dates
-                            start_year = int(match[0])
-                            end_year = current_year if match[1] == '' else int(match[1])
-                            years = end_year - start_year
-                        else:
-                            # Use the first group if not a year range
-                            years = int(match[0])
-                    else:
-                        years = int(match)
-                    
-                    # Cap reasonable experience at 45 years
-                    years = min(years, 45) 
-                    
-                    # Only use positive, reasonable experience values
-                    if years > 0:
-                        max_years = max(max_years, years)
-                except (ValueError, IndexError):
-                    continue
+            try:
+                years = max([int(match.replace('+', '')) for match in matches if match])
+                return min(years, 30)  # Cap at 30 years to be reasonable
+            except (ValueError, TypeError):
+                pass
+                
+    # If no explicit experience phrases found, try to determine from work history
+    # Parse job dates to calculate total work history
+    job_patterns = [
+        # Job with year range
+        r'(\d{4})\s*(?:-|–|to)\s*(?:present|current|now|till date|today|\d{4})',
+    ]
     
-    return max_years
+    import datetime
+    current_year = datetime.datetime.now().year
+    years_list = []
+    
+    # Extract work experience from job listings with date ranges
+    for pattern in job_patterns:
+        matches = re.findall(pattern, text.lower())
+        for match in matches:
+            try:
+                start_year = int(match)
+                # Make sure the year is reasonable (not a random 4-digit number)
+                if 1950 <= start_year <= current_year:
+                    years = current_year - start_year
+                    if 0 < years <= 40:  # Reasonable employment period
+                        years_list.append(years)
+            except (ValueError, TypeError):
+                pass
+    
+    # If we found job date ranges, use the most recent one (not the sum, as jobs might overlap)
+    if years_list:
+        return max(years_list)
+    
+    # If no experience found through specific methods, look for any number near "years" 
+    # (but be very cautious as this can lead to false positives)
+    general_year_pattern = r'(\d+)\s*(?:years?|yrs?)'
+    matches = re.findall(general_year_pattern, text.lower())
+    if matches:
+        # Filter out unreasonable values and prefer smaller numbers as they're more likely to be experience
+        valid_years = [int(y) for y in matches if 1 <= int(y) <= 20]
+        if valid_years:
+            # For general patterns, we'll prefer numbers that are more likely to represent experience (1-15)
+            for y in sorted(valid_years):
+                if 1 <= y <= 15:
+                    return y
+            # If no values in the 1-15 range, use the smallest valid year found
+            return min(valid_years)
+    
+    # No experience information found
+    return 0
 
 def extract_education_level(text):
     """
