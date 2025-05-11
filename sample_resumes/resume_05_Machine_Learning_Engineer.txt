@@ -1,0 +1,14 @@
+Name: Daniel Green
+Title: Machine Learning Engineer
+
+Experience:
+- Machine Learning Engineer (2020 – 2021)
+  Worked on TensorFlow, PyTorch, and developed scalable features using NLP.
+- Intern (2019 – 2022)
+  Assisted with OpenCV and collaborated with teams on Python.
+
+Skills:
+TensorFlow, PyTorch, NLP, OpenCV, Python, AWS SageMaker
+
+Education:
+Bachelor of Technology in Computer Science, 2019

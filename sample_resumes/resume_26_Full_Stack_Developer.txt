@@ -1,0 +1,14 @@
+Name: Harper Singh
+Title: Full Stack Developer
+
+Experience:
+- Full Stack Developer (2021 – 2022)
+  Worked on React, Node.js, and developed scalable features using MongoDB.
+- Intern (2018 – 2019)
+  Assisted with GraphQL and collaborated with teams on Docker.
+
+Skills:
+React, Node.js, MongoDB, GraphQL, Docker, GitHub Actions
+
+Education:
+Master of Computer Applications, 2018

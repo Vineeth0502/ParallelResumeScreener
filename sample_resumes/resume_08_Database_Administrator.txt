@@ -1,0 +1,14 @@
+Name: Sophia Kim
+Title: Database Administrator
+
+Experience:
+- Database Administrator (2020 – 2022)
+  Worked on MySQL, PostgreSQL, and developed scalable features using MongoDB.
+- Intern (2017 – 2019)
+  Assisted with Backup and collaborated with teams on Query Optimization.
+
+Skills:
+MySQL, PostgreSQL, MongoDB, Backup, Query Optimization, Shell Scripting
+
+Education:
+Master of Computer Applications, 2018

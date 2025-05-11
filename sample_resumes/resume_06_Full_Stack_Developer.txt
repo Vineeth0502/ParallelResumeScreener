@@ -1,0 +1,14 @@
+Name: Priya Sharma
+Title: Full Stack Developer
+
+Experience:
+- Full Stack Developer (2020 – 2021)
+  Worked on React, Node.js, and developed scalable features using MongoDB.
+- Intern (2019 – 2021)
+  Assisted with GraphQL and collaborated with teams on Docker.
+
+Skills:
+React, Node.js, MongoDB, GraphQL, Docker, GitHub Actions
+
+Education:
+Bachelor of Technology in Computer Science, 2019

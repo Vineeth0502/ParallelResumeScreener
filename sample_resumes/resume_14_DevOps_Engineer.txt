@@ -1,0 +1,14 @@
+Name: Olivia Brown
+Title: DevOps Engineer
+
+Experience:
+- DevOps Engineer (2020 – 2021)
+  Worked on AWS, Terraform, and developed scalable features using Jenkins.
+- Intern (2019 – 2022)
+  Assisted with Kubernetes and collaborated with teams on CI/CD.
+
+Skills:
+AWS, Terraform, Jenkins, Kubernetes, CI/CD, Linux
+
+Education:
+Master of Computer Applications, 2018

@@ -1,0 +1,14 @@
+Name: Noah Harris
+Title: Data Scientist
+
+Experience:
+- Data Scientist (2022 – 2023)
+  Worked on Python, scikit-learn, and developed scalable features using SQL.
+- Intern (2018 – 2019)
+  Assisted with Pandas and collaborated with teams on Tableau.
+
+Skills:
+Python, scikit-learn, SQL, Pandas, Tableau, Machine Learning
+
+Education:
+Master of Science in Artificial Intelligence, 2021

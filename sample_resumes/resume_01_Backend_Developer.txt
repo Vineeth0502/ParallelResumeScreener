@@ -1,0 +1,14 @@
+Name: Amit Roy
+Title: Backend Developer
+
+Experience:
+- Backend Developer (2021 – 2023)
+  Worked on Node.js, Express, and developed scalable features using PostgreSQL.
+- Intern (2017 – 2020)
+  Assisted with Docker and collaborated with teams on REST API.
+
+Skills:
+Node.js, Express, PostgreSQL, Docker, REST API, Git
+
+Education:
+Bachelor of Engineering in Information Technology, 2020

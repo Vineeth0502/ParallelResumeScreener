@@ -1,0 +1,14 @@
+Name: Marcus Lee
+Title: Data Scientist
+
+Experience:
+- Data Scientist (2021 – 2024)
+  Worked on Python, scikit-learn, and developed scalable features using SQL.
+- Intern (2018 – 2020)
+  Assisted with Pandas and collaborated with teams on Tableau.
+
+Skills:
+Python, scikit-learn, SQL, Pandas, Tableau, Machine Learning
+
+Education:
+Ph.D. in Computer Science, 2022

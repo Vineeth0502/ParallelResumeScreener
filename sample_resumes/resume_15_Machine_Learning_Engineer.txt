@@ -1,0 +1,14 @@
+Name: Arjun Verma
+Title: Machine Learning Engineer
+
+Experience:
+- Machine Learning Engineer (2022 – 2024)
+  Worked on TensorFlow, PyTorch, and developed scalable features using NLP.
+- Intern (2018 – 2021)
+  Assisted with OpenCV and collaborated with teams on Python.
+
+Skills:
+TensorFlow, PyTorch, NLP, OpenCV, Python, AWS SageMaker
+
+Education:
+Master of Computer Applications, 2018

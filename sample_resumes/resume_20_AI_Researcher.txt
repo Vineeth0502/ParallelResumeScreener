@@ -1,0 +1,14 @@
+Name: Grace Johnson
+Title: AI Researcher
+
+Experience:
+- AI Researcher (2022 – 2024)
+  Worked on Deep Learning, Reinforcement Learning, and developed scalable features using TensorFlow.
+- Intern (2017 – 2019)
+  Assisted with Python and collaborated with teams on Matplotlib.
+
+Skills:
+Deep Learning, Reinforcement Learning, TensorFlow, Python, Matplotlib, OpenAI Gym
+
+Education:
+Bachelor of Technology in Computer Science, 2019

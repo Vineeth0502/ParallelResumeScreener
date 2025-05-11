@@ -1,0 +1,14 @@
+Name: Sarah Bennett
+Title: Frontend Developer
+
+Experience:
+- Frontend Developer (2022 – 2023)
+  Worked on React, Redux, and developed scalable features using JavaScript.
+- Intern (2017 – 2018)
+  Assisted with HTML and collaborated with teams on CSS.
+
+Skills:
+React, Redux, JavaScript, HTML, CSS, Figma
+
+Education:
+Bachelor of Engineering in Information Technology, 2020

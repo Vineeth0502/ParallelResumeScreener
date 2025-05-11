@@ -26,16 +26,7 @@ ENV/
 logs/
 *.log
 
-# Application output
-output/
-*.csv
-*.xlsx
-*.tsv
 
-# Sample resumes or generated data
-sample_resumes/
-*.txt
-*.pdf
 
 # Environment config
 .env

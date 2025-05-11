@@ -1,0 +1,59 @@
+John Smith
+Email: john.smith@email.com
+Phone: (555) 123-4567
+
+PROFESSIONAL SUMMARY
+Experienced Python developer with 7 years of experience in developing and maintaining data-driven applications. Skilled in machine learning implementation, database management, and cloud infrastructure. Strong problem-solving abilities and excellent team collaboration skills.
+
+EDUCATION
+Master of Science in Computer Science
+Stanford University, 2018
+
+Bachelor of Science in Computer Engineering
+University of California, Berkeley, 2016
+
+SKILLS
+- Programming Languages: Python (expert), JavaScript, SQL, C++
+- Frameworks: Django, Flask, FastAPI, React
+- Databases: PostgreSQL, MongoDB, Redis
+- Cloud: AWS (EC2, S3, Lambda), Google Cloud Platform
+- DevOps: Docker, Kubernetes, CI/CD pipelines
+- ML/AI: scikit-learn, TensorFlow, PyTorch
+- Tools: Git, Jira, Linux, Bash
+
+WORK EXPERIENCE
+
+Senior Python Developer
+DataTech Solutions, 2020 - Present
+- Led development of a data processing pipeline handling 10TB+ daily data
+- Implemented machine learning models for predictive analytics
+- Optimized database performance resulting in 40% faster query times
+- Mentored 5 junior developers in best practices
+- Maintained 95% code coverage with comprehensive unit tests
+- Designed and implemented RESTful APIs using FastAPI
+
+Python Developer
+AI Research Group, 2018 - 2020
+- Collaborated with data scientists to implement machine learning algorithms
+- Developed ETL processes for data warehouse solutions
+- Created visualization dashboards for business intelligence
+- Maintained AWS infrastructure for production applications
+- Implemented CI/CD pipelines with Jenkins and Docker
+
+Software Engineer Intern
+Tech Innovations Inc., Summer 2017
+- Developed features for customer-facing web application
+- Fixed bugs and improved application performance
+- Assisted in database schema design and optimization
+
+PROJECTS
+- Open-source contributor to several Python libraries
+- Developed a real-time analytics dashboard with Flask and React
+- Created a machine learning model for text classification with 92% accuracy
+
+CERTIFICATIONS
+- AWS Certified Developer – Associate
+- Professional Scrum Master I (PSM I)
+
+LANGUAGES
+English (Native), Spanish (Intermediate)

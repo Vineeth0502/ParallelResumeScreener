@@ -1,0 +1,14 @@
+Name: Kenji Takahashi
+Title: AI Researcher
+
+Experience:
+- AI Researcher (2022 – 2023)
+  Worked on Deep Learning, Reinforcement Learning, and developed scalable features using TensorFlow.
+- Intern (2019 – 2020)
+  Assisted with Python and collaborated with teams on Matplotlib.
+
+Skills:
+Deep Learning, Reinforcement Learning, TensorFlow, Python, Matplotlib, OpenAI Gym
+
+Education:
+Master of Science in Artificial Intelligence, 2021

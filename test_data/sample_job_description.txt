@@ -1,0 +1,40 @@
+Software Engineer Job Description
+
+Job Title: Senior Python Developer
+Location: Remote
+
+Company Overview:
+Our company is a leading technology firm specializing in data analytics and machine learning solutions. We are looking for a talented Python Developer to join our growing team.
+
+Responsibilities:
+- Design and implement high-quality Python applications
+- Write clean, maintainable, and efficient code
+- Develop and maintain data processing systems
+- Collaborate with data scientists to implement machine learning models
+- Perform code reviews and mentor junior developers
+- Optimize applications for maximum performance
+- Create comprehensive documentation
+
+Requirements:
+- 5+ years of experience in Python development
+- Strong knowledge of Python frameworks like Django, Flask, or FastAPI
+- Experience with SQL databases and NoSQL data stores
+- Familiarity with AWS or other cloud platforms
+- Understanding of data structures, algorithms, and software design
+- Bachelor's degree in Computer Science or related field (Master's preferred)
+- Experience with machine learning libraries (scikit-learn, TensorFlow, PyTorch)
+- Excellent problem-solving and communication skills
+
+Nice to Have:
+- Experience with Docker and Kubernetes
+- Knowledge of front-end technologies (HTML, CSS, JavaScript)
+- Open-source contributions
+- Agile methodology experience
+
+Benefits:
+- Competitive salary
+- Flexible working hours
+- Remote work options
+- Healthcare coverage
+- Professional development opportunities
+- 401(k) matching

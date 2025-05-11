@@ -1,0 +1,14 @@
+Name: Emily Davis
+Title: AI Researcher
+
+Experience:
+- AI Researcher (2020 – 2021)
+  Worked on Deep Learning, Reinforcement Learning, and developed scalable features using TensorFlow.
+- Intern (2018 – 2020)
+  Assisted with Python and collaborated with teams on Matplotlib.
+
+Skills:
+Deep Learning, Reinforcement Learning, TensorFlow, Python, Matplotlib, OpenAI Gym
+
+Education:
+Master of Science in Artificial Intelligence, 2021

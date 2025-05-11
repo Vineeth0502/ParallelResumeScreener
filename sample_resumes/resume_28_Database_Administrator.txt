@@ -1,0 +1,14 @@
+Name: Ahmad Nasser
+Title: Database Administrator
+
+Experience:
+- Database Administrator (2022 – 2023)
+  Worked on MySQL, PostgreSQL, and developed scalable features using MongoDB.
+- Intern (2018 – 2019)
+  Assisted with Backup and collaborated with teams on Query Optimization.
+
+Skills:
+MySQL, PostgreSQL, MongoDB, Backup, Query Optimization, Shell Scripting
+
+Education:
+Master of Science in Artificial Intelligence, 2021

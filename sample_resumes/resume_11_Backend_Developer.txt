@@ -1,0 +1,14 @@
+Name: Jake Robinson
+Title: Backend Developer
+
+Experience:
+- Backend Developer (2020 – 2022)
+  Worked on Node.js, Express, and developed scalable features using PostgreSQL.
+- Intern (2017 – 2019)
+  Assisted with Docker and collaborated with teams on REST API.
+
+Skills:
+Node.js, Express, PostgreSQL, Docker, REST API, Git
+
+Education:
+Ph.D. in Computer Science, 2022

@@ -1,0 +1,14 @@
+Name: Zara Wilson
+Title: Cloud Engineer
+
+Experience:
+- Cloud Engineer (2021 – 2023)
+  Worked on AWS, Azure, and developed scalable features using GCP.
+- Intern (2018 – 2019)
+  Assisted with Terraform and collaborated with teams on Docker.
+
+Skills:
+AWS, Azure, GCP, Terraform, Docker, CloudFormation
+
+Education:
+Master of Computer Applications, 2018

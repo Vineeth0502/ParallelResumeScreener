@@ -1,0 +1,14 @@
+Name: Lucas Smith
+Title: Data Scientist
+
+Experience:
+- Data Scientist (2020 – 2023)
+  Worked on Python, scikit-learn, and developed scalable features using SQL.
+- Intern (2019 – 2020)
+  Assisted with Pandas and collaborated with teams on Tableau.
+
+Skills:
+Python, scikit-learn, SQL, Pandas, Tableau, Machine Learning
+
+Education:
+Bachelor of Engineering in Information Technology, 2020

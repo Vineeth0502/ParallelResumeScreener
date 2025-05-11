@@ -1,0 +1,14 @@
+Name: Hannah Nguyen
+Title: Full Stack Developer
+
+Experience:
+- Full Stack Developer (2020 – 2022)
+  Worked on React, Node.js, and developed scalable features using MongoDB.
+- Intern (2017 – 2020)
+  Assisted with GraphQL and collaborated with teams on Docker.
+
+Skills:
+React, Node.js, MongoDB, GraphQL, Docker, GitHub Actions
+
+Education:
+Ph.D. in Computer Science, 2022

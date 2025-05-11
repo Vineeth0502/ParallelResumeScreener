@@ -1,0 +1,14 @@
+Name: Mohammed Ali
+Title: Cybersecurity Analyst
+
+Experience:
+- Cybersecurity Analyst (2020 – 2023)
+  Worked on SIEM, Nmap, and developed scalable features using Wireshark.
+- Intern (2019 – 2020)
+  Assisted with Splunk and collaborated with teams on Firewall.
+
+Skills:
+SIEM, Nmap, Wireshark, Splunk, Firewall, Python
+
+Education:
+Bachelor of Technology in Computer Science, 2019

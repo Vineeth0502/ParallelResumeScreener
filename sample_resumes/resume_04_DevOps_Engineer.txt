@@ -1,0 +1,14 @@
+Name: Linda Zhao
+Title: DevOps Engineer
+
+Experience:
+- DevOps Engineer (2020 – 2021)
+  Worked on AWS, Terraform, and developed scalable features using Jenkins.
+- Intern (2018 – 2019)
+  Assisted with Kubernetes and collaborated with teams on CI/CD.
+
+Skills:
+AWS, Terraform, Jenkins, Kubernetes, CI/CD, Linux
+
+Education:
+Bachelor of Engineering in Information Technology, 2020
