@@ -1,0 +1,62 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# VS Code settings
+.vscode/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# PDFMiner cache
+*.pdfminer.*
+
+# MacOS system files
+.DS_Store
+
+# Streamlit cache and logs
+.streamlit/
+logs/
+*.log
+
+# Application output
+output/
+*.csv
+*.xlsx
+*.tsv
+
+# Sample resumes or generated data
+sample_resumes/
+*.txt
+*.pdf
+
+# Environment config
+.env
+.env.*
+
+# Python egg info
+*.egg-info/
+dist/
+build/
+
+# PyInstaller
+*.spec
+
+# Test results
+coverage/
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+
+# MyPy and linting
+.mypy_cache/
+.dmypy.json
+.pyre/
