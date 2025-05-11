@@ -143,20 +143,47 @@ def extract_education_level(text):
     Returns:
         float: Education score based on highest degree found
     """
+    if not text:
+        return 0.0
+        
     # Define education levels with corresponding scores
     education_patterns = {
-        r'ph\.?d\.?|doctor(?:ate|al)|d\.?phil\.?': 1.0,       # PhD
-        r'master|m\.?s\.?|m\.?b\.?a\.?|m\.?eng\.?|m\.?sc\.?': 0.8,  # Master's
-        r'bachelor|b\.?s\.?|b\.?a\.?|b\.?eng\.?|b\.?sc\.?|b\.?tech\.?': 0.6,  # Bachelor's
-        r'associate|a\.?s\.?|a\.?a\.?': 0.4,  # Associate's
-        r'high school|diploma|ged': 0.2,      # High School
+        # Doctorate level
+        r'ph\.?d\.?|doctor(?:ate|al)|d\.?phil\.?': 1.0,       
+        
+        # Master's level - expanded with more variations
+        r'master|m\.?s\.?|m\.?b\.?a\.?|m\.?eng\.?|m\.?sc\.?|m\.?c\.?a\.?|post.?graduate|graduate degree': 0.8,  
+        
+        # Bachelor's level - expanded with more variations
+        r'bachelor|b\.?s\.?|b\.?a\.?|b\.?eng\.?|b\.?sc\.?|b\.?tech\.?|b\.?c\.?a\.?|college degree|undergraduate|university degree': 0.6,  
+        
+        # Associate's level
+        r'associate|a\.?s\.?|a\.?a\.?|a\.?a\.?s\.?|community college|technical college': 0.4,  
+        
+        # High School level - expanded with international equivalents
+        r'high school|diploma|ged|secondary school|higher secondary|12th|hsc': 0.2,      
     }
+    
+    # Search for education-related sections to narrow the context
+    education_sections = [
+        "education", "academic background", "academic qualification", 
+        "qualification", "academic history", "academic profile"
+    ]
+    
+    # Check if any education section headers exist
+    has_education_section = any(re.search(r'^\s*' + section + r'[:\s]*$', text.lower(), re.MULTILINE) 
+                               for section in education_sections)
     
     # Find the highest education level
     max_score = 0.0
     for pattern, score in education_patterns.items():
         if re.search(pattern, text.lower()):
             max_score = max(max_score, score)
+    
+    # If no education level is found but the resume is substantial
+    # assign a default score of bachelor's degree (most common)
+    if max_score == 0.0 and len(text) > 500:
+        max_score = 0.6  # Default to bachelor's level
     
     return max_score
 
@@ -211,6 +238,13 @@ def score_resume(resume_text, job_keywords):
     
     # Extract years of experience and calculate experience score
     years_experience = extract_years_experience(resume_text)
+    
+    # If no experience was detected but we have resume text, assign a default value
+    # This ensures we don't penalize resumes where the experience format isn't recognized
+    if years_experience == 0 and len(resume_text) > 500:  # Only for substantial resumes
+        # Default to a moderate 5 years experience if not detected (middle of range)
+        years_experience = 5
+        
     # Cap experience score at 1.0 (10+ years)
     experience_score = min(years_experience / 10.0, 1.0)
     
